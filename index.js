@@ -12,7 +12,7 @@ const mongoose = require('mongoose')
 const app=express();
 app.use(express.json())
 
-const uri = "mongodb+srv://deepajain:Bhuri1234@cluster0.sesrdlz.mongodb.net/?retryWrites=true&w=majority";
+const uri = "******";
 
 mongoose 
  .connect(uri, {
