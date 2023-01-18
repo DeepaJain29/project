@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SPECIMEN FORM</title>
+        <link rel="stylesheet" href="./routes/user" />
+    </head>
+    <body style="margin-left: 400px ;">
+        <div class="parent">
+            <div class="child">
+                <h1 style="border:black 2px solid" >ICMR Specimen Referral Form for COVID-19</h1>
+
+                <form method="POST" action="http://localhost:3000/user/postUser">
+
+                     <!-- collection 1 -->
+                     <section style="border:black 2px solid ; font-size:small;"  >
+                        <h2 style="text-align: center ; background-color:grey;">SECTION A - PATIENT DETAILS</h2>
+                        <h3 style="background-color:grey;"><strong>SECTION A1 - PERSONAL DETAILS</strong></h3>
+                        
+                        <label for="patientName"> *Patient Name </label>
+                        <input minlength="2" maxlength="12" id="patientName" type = "text" required/>
+                        <br/>
+
+                        <label for="age"> *Age </label>
+                        <input min="2" max="150" id="age" type ="number" required/>
+                        <br/>
+
+                        <label for="radio"> *Gender: </label>
+                        <label for="radio"> Male </label>
+                        <input name="single" type = "radio" required/>
+                        <label for="radio"> Female </label>
+                        <input name="single" type = "radio" required />
+                        <label for="radio"> Others </label>
+                        <input name="single" type = "radio" required />
+                        <br/>
+
+                        <label for="number"> *Mobile Number: </label>
+                        <input maxlength="10" id="number" type = "text" required />
+                        <br/>
+
+
+                        <label for="radio"> *Mobile Number belongs to: </label>
+                        <label for="radio" > Self </label>
+                        <input name="single1" type = "radio" required/>
+                        <label for="radio"> Family </label>
+                        <input name="single1" type = "radio" required />
+                        <br/>
+
+                        <label for="Nationality"> *Nationality </label>
+                        <input minlength="2" maxlength="10" id="Nationality" type = "text" required/>
+                        <br/>
+
+
+                        <label for="radio"> *Patient in quarantine facility:  </label>
+                        <label for="radio"> Yes </label>
+                        <input name="single2" type = "radio" required/>
+                        <label for="radio"> No </label>
+                        <input name="single2" type = "radio" required />
+                        <br/>
+
+
+                        <label for="village"> *Present Village or Town: </label>
+                        <input minlength="2" maxlength="10" id="village" type = "text" required/>
+                        <br/>
+
+
+                        <label for="district"> *District of Present Residence:</label>
+                        <input minlength="2" maxlength="10" id="district" type = "text" required/>
+                        <br/>
+
+                        <label for="Residence"> *State of Present Residence: </label>
+                        <input minlength="2" maxlength="10" id="Residence" type = "text" required/>
+                        <br/>
+
+                        <label for="address"> *Present patient address:</label>
+                        <input minlength="2" maxlength="10" id="address" type = "text" required/>
+                        <br/>
+
+                        <label for="pincode"> Pincode </label>
+                        <input maxlength="6" id="pincode" type = "number" />
+                        <br/>
+
+                    </section>
+
+                     <!-- collection 2 -->
+                    <section style="border:black 2px solid ; font-size:small;" >
+                        <h3 style="text-align: center ; background-color:grey;"><strong>SECTION A2 - SPECIMEN INFORMATION FROM REFERRING AGENCY</strong></h3>
+
+                        <label for="check" required> *Specimen type:  </label>
+                        <label for="check"> throat swab </label>
+                        <input name="multi" type = "checkbox" />
+                        <label for="check"> nasal swab </label>
+                        <input name="multi" type = "checkbox" />
+                        <label for="check"> BAL </label>
+                        <input name="multi" type = "checkbox" />
+                        <label for="check"> ETA </label>
+                        <input name="multi" type = "checkbox" />
+                        <label for="check"> nasopharyngeal </label>
+                        <input name="multi" type = "checkbox" />
+                        <br/>
+
+                        <label for="colldate">*Collection date:</label>
+                        <input type = "date" required/><br/>
+
+                    </section>
+
+                     <!-- collection 3 -->
+                    <section style="border:black 2px solid ; font-size:small">
+                        <h2 style="text-align: center; background-color:grey;">SECTION B - MEDICAL INFORMATION</h2>
+                        <h3 style=" background-color:grey;"><strong>SECTION B1 - CLINICAL SYMPTOMS AND SIGNS</strong></h3>
+
+                        <label for="radio"> Symptoms: </label>
+                        <label for="radio"> Yes </label>
+                        <input name="single3" type = "radio" />
+                        <label for="radio"> No </label>
+                        <input name="single3" type = "radio" />
+                        <br/>
+
+                        <label for="check"><strong> signs:  </strong></label>
+                        <label for="check"> Cough </label>
+                        <input name="multi1" type = "checkbox" />
+                        <label for="check"> Diarrhoea  </label>
+                        <input name="multi1" type = "checkbox" />
+                        <label for="check"> Vomiting </label>
+                        <input name="multi1" type = "checkbox" />
+                        <label for="check"> Fever at evaluation </label>
+                        <input name="multi1" type = "checkbox" />
+                        <label for="check"> Abdominal pain </label>
+                        <input name="multi1" type = "checkbox" />
+                        <label for="check"> Breathlessness </label>
+                        <input name="multi1" type = "checkbox" /><br/>
+                        <label for="check">Nausea </label>
+                        <input name="multi1" type = "checkbox" />
+                        <label for="check">Haemoptysis</label>
+                        <input name="multi1" type = "checkbox" />
+                        <label for="check"> Body ache </label>
+                        <input name="multi1" type = "checkbox" />
+                        <label for="check"> Sore throat </label>
+                        <input name="multi1" type = "checkbox" />
+                        <label for="check"> Chest pain </label>
+                        <input name="multi1" type = "checkbox" />
+                        <label for="check"> Nasal discharge </label>
+                        <input name="multi1" type = "checkbox" />
+                        <label for="check"> Sputum</label>
+                        <input name="multi1" type = "checkbox" />
+                        <br/>
+
+                        <label for="firstSign"> Which of the above mentioned was First Symptom:</label>
+                        <input id="firstSign" type = "text" />
+                        <br/>
+
+                    </section>
+
+                    <!-- collection 5 -->
+                    <section style="border:black 2px solid ; font-size:small">
+                        <h3 style="background-color:grey;"><strong>SECTION B3 - HOSPITALIZATION DETAILS</strong></h3>
+
+                        <label for="radio"> Hospitalized: </label>
+                        <label for="radio"> Yes </label>
+                        <input name="single4" type = "radio" />
+                        <label for="radio"> No </label>
+                        <input name="single4" type = "radio" />
+                        <br/>
+
+                        <label for="hospitalID"> Hospital ID / Number </label>
+                        <input id="hospitalID" type = "text" />
+                        <br/>
+
+                        <label for="HospitalState"> Hospital State:</label>
+                        <input minlength="2" maxlength="10" id="HospitalState" type = "text" />
+                        <br/>
+
+                        <label for="HospitalDistrict"> Hospital District:</label>
+                        <input minlength="2" maxlength="10" id="HospitalDistrict" type = "text" />
+                        <br/>
+
+                        <label for="HospitalName">Hospital Name:</label>
+                        <input minlength="2" maxlength="10" id="HospitalName" type = "text" />
+                        <br/>
+
+                        <label for="HospitalizationDate">Hospitalization Date:</label>
+                        <input id="HospitalizationDate" type = "date" />
+                        <br/>
+
+
+                    </section>
+
+                    
+                    <button>submit</button>
+
+
+                    
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+const mongoose = require('mongoose')
+const collection4 = new mongoose.Schema({
+    chronicLungDisease:{
+        type:Boolean,
+        nullable:true
+    },
+    malignancy:{
+        type:Boolean,
+        nullable:true
+    },
+    heartDisease:{
+        type:Boolean,
+        nullable:true
+    },
+    chronicLiverDisease:{
+        type:Boolean,
+        nullable:true
+    },
+    chronicRenalDisease:{
+        type:Boolean,
+        nullable:true
+    },
+    diabetes:{
+        type:Boolean,
+        nullable:true
+    },
+    hypertension:{
+        type:Boolean,
+        nullable:true
+    },
+    immunocompromizedCondition:{
+        type:Boolean,
+        nullable:true
+    },
+    otherUNnderlyingDisease:{
+        type:String,
+        nullable:true,
+        lowercase:true
+    }
+},{
+    timestamps:true
+}
+)
+module.exports = mongoose.model("preExistingMedicalConditions", collection4)

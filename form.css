@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    padding: 50px;
+    margin-left: 250px ;
+    
+}
+
+.parent{
+    background-color: white;
+    width: 75%;
+    height: 1000px;
+    display: flex;
+    /* for x axis */
+    justify-content: center;
+    /* gap:5px ; */
+    /* for y axis */
+    align-items: top;
+    /* align-self:center */
+    
+}
+
+.child{
+    background-color:white;
+    width: 650px;
+    height: auto;
+    margin: 10px;
+
+}
